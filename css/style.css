@@ -25,9 +25,11 @@ img {
     text-align:center;
     position: fixed;
 }
-.navigation-bar img{
+
+.navigation-bar img {
     float:left;
 }
+
 .navigation-bar ul {
     padding: 0px;
     margin: 0px;
