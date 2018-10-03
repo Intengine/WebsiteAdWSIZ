@@ -13,22 +13,41 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                    let target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 
-<!-- navbar -->
-<header class="navigation-bar">
-    <div id="navigation-container">
-        <img src="img/logo.png">
+<nav>
+    <img src="img/logo.png">
+    <a href="#one">one</a>
+    <a href="#two">two</a>
+    <a href="#three">three</a>
+    <a href="#four">four</a>
+    <a href="#five">five</a>
+</nav>
 
-        <ul>
-            <li><a href="#">Strona Główna</a></li>
-            <li><a href="#">Specjalizacje</a></li>
-            <li><a href="#">Film</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </div>
-</header>
+<section id="one">Page 1</section>
+<section id="two">Page 2</section>
+<section id="three">Page 3</section>
+<section id="four">Page 4</section>
+<section id="five">Page 5</section>
 
 </body>
 </html>
