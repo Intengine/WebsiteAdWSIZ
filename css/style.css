@@ -29,7 +29,11 @@ section {
 }
 
 #one {
-    background-image: radial-gradient(#787878, black);
+    background-color: #292b37;
+    background-image: url('../img/backgroundSection1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     color: #fff;
     font-size: 30px;
     text-align: center;
@@ -37,7 +41,7 @@ section {
 }
 
 #two {
-    background: #123037;
+    background-color: #123037;
     color: #fff;
     font-size: 30px;
     text-align: center;
@@ -45,7 +49,7 @@ section {
 }
 
 #three {
-    background: #74BE98;
+    background-color: #74BE98;
     font-size: 30px;
     text-align: center;
     vertical-align: middle;
@@ -58,7 +62,7 @@ nav {
 nav a {
     display: block;
     font-size: 12px;
-    color: #FFF;
+    color: white;
     text-align: center;
     padding: 10px;
     margin: 3px;
