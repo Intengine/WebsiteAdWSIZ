@@ -55,6 +55,10 @@ section {
 
 #three {
     background-color: #195850;
+    background-image: url('../img/backgroundSection3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     font-size: 30px;
     text-align: center;
     vertical-align: middle;
