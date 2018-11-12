@@ -1,2 +1,2 @@
 # WebsiteAdWSIZ
-Website for WSIZ's advertise movie [WIP]
+Website for WSIZ's advertise movie
